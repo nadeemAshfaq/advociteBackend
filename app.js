@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dataRoutes = require('./routes/dataRoutes');
-const cors = require('cors');
+var cors = require('cors')
 
 const app = express();
 const port = process.env.PORT || 8000;
