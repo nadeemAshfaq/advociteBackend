@@ -1,10 +1,11 @@
 const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dataRoutes = require('./routes/dataRoutes');
 var cors = require('cors')
 
-const app = express();
+
 const port = process.env.PORT || 8000;
 app.use(cors())
 // Middleware
